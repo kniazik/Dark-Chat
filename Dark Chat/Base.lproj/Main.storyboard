@@ -22,21 +22,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dark Chat" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="CXS-nB-OrS">
-                                <rect key="frame" x="0.0" y="106" width="375" height="58"/>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo-dark-theme" translatesAutoresizingMaskIntoConstraints="NO" id="NfY-mg-xxf">
+                                <rect key="frame" x="0.0" y="70" width="375" height="175"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="351" id="IAq-fr-Fma"/>
-                                    <constraint firstAttribute="height" constant="58" id="xjj-UX-qaA"/>
+                                    <constraint firstAttribute="height" constant="175" id="6SP-Xf-074"/>
                                 </constraints>
-                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="42"/>
-                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="default">
-                                    <mask key="constraints">
-                                        <exclude reference="IAq-fr-Fma"/>
-                                    </mask>
-                                </variation>
-                            </label>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fL7-Ah-gaP">
                                 <rect key="frame" x="78" y="569" width="219" height="50"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -67,12 +58,12 @@
                         <constraints>
                             <constraint firstItem="o3X-Eb-aop" firstAttribute="top" secondItem="fL7-Ah-gaP" secondAttribute="bottom" constant="48" id="5hC-Hz-tsS"/>
                             <constraint firstItem="Qbe-l8-AiL" firstAttribute="width" secondItem="fL7-Ah-gaP" secondAttribute="width" id="6qZ-s7-Ngr"/>
-                            <constraint firstItem="CXS-nB-OrS" firstAttribute="top" secondItem="c7h-7T-ZBO" secondAttribute="bottom" constant="86" id="QS3-uB-PKD"/>
-                            <constraint firstItem="CXS-nB-OrS" firstAttribute="centerX" secondItem="wDD-Ds-V8H" secondAttribute="centerX" id="a66-YZ-1LN"/>
+                            <constraint firstItem="NfY-mg-xxf" firstAttribute="width" secondItem="wDD-Ds-V8H" secondAttribute="width" id="6va-yh-aUr"/>
+                            <constraint firstItem="fL7-Ah-gaP" firstAttribute="centerX" secondItem="wDD-Ds-V8H" secondAttribute="centerX" id="Nka-Gm-AKc"/>
                             <constraint firstItem="fL7-Ah-gaP" firstAttribute="top" secondItem="Qbe-l8-AiL" secondAttribute="bottom" constant="16" id="gNs-q1-beI"/>
+                            <constraint firstItem="NfY-mg-xxf" firstAttribute="centerX" secondItem="wDD-Ds-V8H" secondAttribute="centerX" id="mXF-zz-x72"/>
                             <constraint firstItem="Qbe-l8-AiL" firstAttribute="centerX" secondItem="fL7-Ah-gaP" secondAttribute="centerX" id="omp-Jf-Ysw"/>
-                            <constraint firstItem="fL7-Ah-gaP" firstAttribute="centerX" secondItem="CXS-nB-OrS" secondAttribute="centerX" id="saV-ay-G3g"/>
-                            <constraint firstItem="CXS-nB-OrS" firstAttribute="width" secondItem="wDD-Ds-V8H" secondAttribute="width" id="vOR-3h-2df"/>
+                            <constraint firstItem="NfY-mg-xxf" firstAttribute="top" secondItem="c7h-7T-ZBO" secondAttribute="bottom" constant="50" id="p3V-6c-DhM"/>
                             <constraint firstItem="Qbe-l8-AiL" firstAttribute="height" secondItem="fL7-Ah-gaP" secondAttribute="height" id="wcY-Z9-GMC"/>
                         </constraints>
                     </view>
@@ -85,7 +76,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LkU-QV-XWc" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="389"/>
+            <point key="canvasLocation" x="304.80000000000001" y="388.15592203898052"/>
         </scene>
         <!--Channel List View Controller-->
         <scene sceneID="IJ3-a8-8sF">
@@ -218,4 +209,7 @@
             <point key="canvasLocation" x="976" y="389"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo-dark-theme" width="200" height="200"/>
+    </resources>
 </document>

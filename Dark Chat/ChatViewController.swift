@@ -51,7 +51,15 @@ final class ChatViewController: JSQMessagesViewController {
             title = channel?.name
         }
     }
-    private var messages: [JSQMessage] = []
+    private var messages = [JSQMessage]() {
+        didSet {
+            if messages.isEmpty {
+                setupBackground()
+            } else {
+                collectionView.backgroundView = nil
+            }
+        }
+    }
     private var photoMessageMap: [String: JSQPhotoMediaItem] = [:]
     
     
@@ -59,6 +67,8 @@ final class ChatViewController: JSQMessagesViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        setupBackground()
         
         senderId = Auth.auth().currentUser?.uid
         
@@ -191,9 +201,6 @@ final class ChatViewController: JSQMessagesViewController {
         present(alert, animated: true, completion:nil)
     }
     
-    // MARK: Firebase related methods
-    
-    
     // MARK: - UI and Interaction
     
     private func setupOutgoingBubble() -> JSQMessagesBubbleImage {
@@ -226,6 +233,13 @@ final class ChatViewController: JSQMessagesViewController {
         if let refHandle = updatedMessageRefHandle {
             messageRef.removeObserver(withHandle: refHandle)
         }
+    }
+    
+    private func setupBackground() {
+        let imageView = UIImageView(image: UIImage(named: "logo-light-theme.png"))
+        imageView.contentMode = .center
+        
+        collectionView.backgroundView = imageView
     }
     
     private func addMessage(withId id: String, name: String, text: String) {
