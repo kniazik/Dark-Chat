@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>627821694672-7vj5qjfeu8m3qfadd7bderutqtcuej5o.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.627821694672-7vj5qjfeu8m3qfadd7bderutqtcuej5o</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCMHQjAMNmYG96lIBtrj0pVhPu7HA_bIWI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>627821694672</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.knyazik.Dark-Chat</string>
+	<key>PROJECT_ID</key>
+	<string>dark-chat-a832a</string>
+	<key>STORAGE_BUCKET</key>
+	<string>dark-chat-a832a.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true/>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false/>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false/>
+	<key>IS_GCM_ENABLED</key>
+	<true/>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true/>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:627821694672:ios:2075c909a9b4170c</string>
+	<key>DATABASE_URL</key>
+	<string>https://dark-chat-a832a.firebaseio.com</string>
+</dict>
+</plist>
