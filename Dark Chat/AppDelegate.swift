@@ -17,7 +17,6 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
                      didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         FirebaseApp.configure()
         UIApplication.shared.statusBarStyle = .lightContent
-
         return true
     }
 }
