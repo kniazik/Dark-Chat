@@ -1,4 +1,4 @@
-//  AppDelegate.swift
+
 //  Dark Chat
 //
 //  Created by elusive on 8/27/17.
